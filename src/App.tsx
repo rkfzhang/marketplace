@@ -1,7 +1,9 @@
+import { Card } from "./components/card/card"
+
 export const App = () => {
 
   return (
-    <h1>Hello World</h1>
+    <Card title="Card Title" description="Card Description" />
   )
 }
 
