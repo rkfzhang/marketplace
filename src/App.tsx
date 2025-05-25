@@ -1,9 +1,19 @@
-import { Card } from "./components/card/card"
+import { BrowserRouter } from "react-router"
+import { MainNav } from "./components/mainNav"
+import { MainRouter } from "./pages"
+
 
 export const App = () => {
 
   return (
-    <Card title="Card Title" description="Card Description" />
+    <div className="app-wrapper">
+      <BrowserRouter>
+        <div className="grid grid-cols-[16rem_1fr] min-h-screen">
+          <MainNav />
+          <MainRouter />
+        </div>
+      </BrowserRouter>
+    </div>
   )
 }
 

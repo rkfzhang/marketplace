@@ -1,16 +1,18 @@
+import type { ReactNode } from "react";
+
 type CardProps = {
   title: string;
-  description: string;
+  children: ReactNode;
 };
   
 
-export const Card = ({ title, description }: CardProps) => {
+export const Card = ({ title, children }: CardProps) => {
   return (
     <div className="card-wrapper">
-      <div className="bg-white rounded-lg shadow-lg overflow-hidden sm:max-w-xs lg:max-w-sm xl:max-w-md">
+      <div className="bg-white rounded-lg shadow-lg overflow-hidden w-full">
         <div className="px-6 py-4">
-          <h2 className="font-sans text-black-700 font-bold text-xl mb-2">{title}</h2>
-          <p className="bg-white border-none rounded-none font-sans text-gray-700 text-base">{description}</p>
+          <h1 className="text-xl">{title}</h1>
+          {children}
         </div>
       </div>
     </div>
