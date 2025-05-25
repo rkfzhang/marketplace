@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 export const ContentView = () => {
   const [activeTab, setActiveTab] = useState('graph');

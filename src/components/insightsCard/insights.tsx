@@ -1,5 +1,4 @@
 import { InformationCircleIcon } from "@heroicons/react/24/solid";
-import type { ReactNode } from "react";
 
 type CardProps = {
   content: string;
