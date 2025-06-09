@@ -54,6 +54,14 @@ export const SimulationForm = () => {
     }));
   };
 
+  const handleSelectChange = (e: ChangeEvent<HTMLSelectElement>): void => {
+    const { name, value } = e.target;
+    setFormData(prevData => ({
+      ...prevData,
+      [name]: value
+    }));
+  };
+
   const handleAmenitiesChange = (id: number): void => {
     setFormData(prevData => {
       const updatedAmenities = prevData.amenities.includes(id)
@@ -86,7 +94,7 @@ export const SimulationForm = () => {
             id="country"
             name="country"
             value={formData.country}
-            onChange={handleChange}
+            onChange={handleSelectChange}
             className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           >
             <option value="">Select a country</option>
