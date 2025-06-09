@@ -26,15 +26,15 @@ export const SimulationForm = () => {
     amenities: [],
   });
 
-  const countries: Country[] = [
-    { id: 1, name: 'United States', code: 'USA' },
-    { id: 2, name: 'United Kingdom', code: 'UK' },
-    { id: 3, name: 'Canada', code: 'CAN' },
-    { id: 4, name: 'Australia', code: 'AUS' },
-    { id: 5, name: 'Germany', code: 'DEU' },
-    { id: 6, name: 'France', code: 'FRA' },
-    { id: 7, name: 'Japan', code: 'JPN' },
-  ];
+  // const countries: Country[] = [
+  //   { id: 1, name: 'United States', code: 'USA' },
+  //   { id: 2, name: 'United Kingdom', code: 'UK' },
+  //   { id: 3, name: 'Canada', code: 'CAN' },
+  //   { id: 4, name: 'Australia', code: 'AUS' },
+  //   { id: 5, name: 'Germany', code: 'DEU' },
+  //   { id: 6, name: 'France', code: 'FRA' },
+  //   { id: 7, name: 'Japan', code: 'JPN' },
+  // ];
 
 
     const amenities: Amenities[] = [
