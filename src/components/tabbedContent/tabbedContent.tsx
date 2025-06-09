@@ -30,7 +30,7 @@ const occupencyData = [
 const occupencyTitle = "Occupency Rate"
 
 
-export const ContentView = () => {
+export const TabbedContent = () => {
   const [activeTab, setActiveTab] = useState('graph');
 
   const tabClasses = (tab: string) =>

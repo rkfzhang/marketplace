@@ -1,5 +1,5 @@
 import { Card } from "../components/card"
-import { ContentView } from "../components/contentView"
+import { TabbedContent } from "../components/tabbedContent"
 import { InsightsCard } from "../components/insightsCard"
 
 const AddressCard = () => {
@@ -64,7 +64,7 @@ export const HomePage = () => {
           <InsightList />
         </div>
         <div>
-          <ContentView />
+          <TabbedContent />
         </div>
       </div>
     </div>
