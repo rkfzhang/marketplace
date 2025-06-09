@@ -1,0 +1,1 @@
+export { HousingMap } from "./housingMap";
